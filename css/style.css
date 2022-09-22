@@ -1,3 +1,9 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   background-color: #5b2386;
   font-family: "GmarketSans";
@@ -8,13 +14,18 @@ button {
   cursor: pointer;
 }
 
+/* 숨김 태그 */
+.hidden {
+  display: none;
+}
+
 h1 {
   background: url(../img/clock.png) no-repeat;
   background-position: center center;
   width: 564px;
   height: 265px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
   text-align: center;
   line-height: 265px;
@@ -29,9 +40,9 @@ h1 {
 .연습-img {
   display: block;
   width: 486px;
-  height: 32px;
+  height: 28px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .txt-desc {
@@ -85,7 +96,7 @@ h1 {
   padding: 18px 49px;
   border-radius: 56px;
   border: 1px solid black;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 #section-cont-inp .click-img {
@@ -107,7 +118,7 @@ h1 {
 }
 
 #section-result p:nth-child(2) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #section-result strong {
@@ -154,11 +165,7 @@ footer p {
   font-weight: 400;
 }
 
-/* 숨김 태그 */
-.hidden {
-  display: none;
-}
-
+/* 모달창 */
 .cont-modal {
   font-family: "OTEnjoystoriesBA";
   background-color: white;
@@ -187,4 +194,24 @@ footer p {
 
 .cont-modal .btn-go {
   margin-top: 74px;
+}
+
+/* 로딩 */
+
+.section-loading {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.section-loading img {
+  width: 100px;
+  height: 100px;
+}
+
+/* 회전시키기 */
+.rotate {
+  animation: rotate 2s linear infinite;
+  transform-origin: 50% 50%;
 }
